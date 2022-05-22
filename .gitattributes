@@ -1,0 +1,7 @@
+* text=auto
+*.txt text eol=lf
+*.json text eol=lf
+*.bash eol=lf
+*.pl eol=lf
+*.png binary
+*.jar binary
