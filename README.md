@@ -3,7 +3,7 @@
        width="600"
        alt="logo"
        longdesc="https://github.com/T145/white-bear/master/README.md" />
-  <h3>🔱 Delve | 🪄 Demystify | 🛑 Deny</h3>
+  <h3>🏊🏿‍♀️ Delve | 📸 Demystify | 🛑 Deny</h3>
   <hr>
   <p>DoH, DoT, DNSCrypt, &amp; DoQ provider whitelists and blacklists.</p>
   <hr>
