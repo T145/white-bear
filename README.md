@@ -5,9 +5,9 @@
        longdesc="https://github.com/T145/white-bear/master/README.md" />
   <h3>🏊🏿‍♀️ Delve | 📸 Demystify | 🛑 Deny</h3>
   <hr>
-  <p>DoH, DoT, DNSCrypt, &amp; DoQ provider whitelists and blacklists.</p>
+  <p><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DoH</a>, <a href="https://en.wikipedia.org/wiki/DNS_over_TLS">DoT</a>, <a href="https://dnscrypt.info/">DNSCrypt</a>, &amp; <a href="https://adguard.com/en/blog/dns-over-quic.html">DoQ</a> provider whitelists and blacklists.</p>
   <hr>
-  <img src="https://badges.pufler.dev/updated/T145/white-bear"
+  <img src="https://badges.pufler.dev/updated/T145/white-bear"1
        alt="last_updated"
        longdesc="https://pufler.dev/git-badges/"
        crossorigin="anonymous"
@@ -37,7 +37,7 @@ Similar projects that this one could be considered a spiritual successor to are 
 
 [TheGreatWall's description](https://github.com/Sekhan/TheGreatWall#what-is-dns-over-https-doh-=) and [AdGuard's article on DoQ](https://adguard.com/en/blog/dns-over-quic.html) provide great overviews for this topic. When deciding whether or not to block a specific encrypted DNS provider domain, it's important to read their policies. Some have actually engineered services that focus on privacy and value the encryption provided by the technology, while others use it to harvest more information on their users.
 
-Regardless of policy, however, it's safe to assume that *all* DoH (DNS-over-HTTPS) providers should be blocked due to [security considerations](https://datatracker.ietf.org/doc/html/rfc8484#section-9). This stems from the fact that HTTPS is **not** transport layer protocol.
+Regardless of policy, however, it's safe to assume that *all* DoH (DNS-over-HTTPS) providers should be blocked due to [security considerations](https://datatracker.ietf.org/doc/html/rfc8484#section-9). This stems from the fact that HTTPS is **not** a transport layer protocol.
 
 Regarding other services, those that ultimately support privacy will be whitelisted, and the latter variants will be blocked.
 
