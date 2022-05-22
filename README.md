@@ -40,3 +40,9 @@ Similar projects that this one could be considered a spiritual successor to are 
 Regardless of policy, however, it's safe to assume that *all* DoH (DNS-over-HTTPS) providers should be blocked due to [security considerations](https://datatracker.ietf.org/doc/html/rfc8484#section-9). This stems from the fact that HTTPS is **not** transport layer protocol.
 
 Regarding other services, those that ultimately support privacy will be whitelisted, and the latter variants will be blocked.
+
+## References
+
+- https://dnsprivacy.org/test_servers/#stubby-configuration
+  - https://raw.githubusercontent.com/getdnsapi/stubby/develop/stubby.yml.example
+- https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers
