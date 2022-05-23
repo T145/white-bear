@@ -1,0 +1,55 @@
+name: Update Sources
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "data/v1/*.csv"
+
+jobs:
+  export_sources:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/t145/black-mirror:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ github.token }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Organize lists
+        run: |
+          mlr --csv --quote-all sort -f provider,service_type,address_type data/v1/whitelist.csv | sponge data/v1/whitelist.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type data/v1/blacklist.csv | sponge data/v1/blacklist.csv
+        shell: bash
+
+      - name: Upload modified sources
+        if: success()
+        uses: actions/upload-artifact@v3
+        with:
+          name: lists
+          path: |
+            data/v1/*.csv
+            exports/*
+          retention-days: 1
+
+  commit_changes:
+    runs-on: ubuntu-latest
+    needs: export_sources
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Download modified Sources
+        uses: actions/download-artifact@v3
+        with:
+          name: lists
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: ✨📚✨
