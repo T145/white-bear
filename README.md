@@ -41,8 +41,13 @@ Regardless of policy, however, it's safe to assume that *all* DoH (DNS-over-HTTP
 
 Regarding other services, those that ultimately support privacy will be whitelisted, and the latter variants will be blocked.
 
-## References
+### List References
 
 - https://dnsprivacy.org/test_servers/#stubby-configuration
   - https://raw.githubusercontent.com/getdnsapi/stubby/develop/stubby.yml.example
 - https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers
+
+### TODO
+
+- https://github.com/bebasid/bebasdns
+- https://github.com/pengelana/blocklist/wiki/DNS-over-HTTPS-(DoH)

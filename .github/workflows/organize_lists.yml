@@ -23,8 +23,8 @@ jobs:
 
       - name: Organize lists
         run: |
-          mlr --csv --quote-all sort -f provider,service_type,address_type data/v1/whitelist.csv | sponge data/v1/whitelist.csv
-          mlr --csv --quote-all sort -f provider,service_type,address_type data/v1/blacklist.csv | sponge data/v1/blacklist.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v1/whitelist.csv | sponge data/v1/whitelist.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v1/blacklist.csv | sponge data/v1/blacklist.csv
         shell: bash
 
       - name: Upload modified sources
