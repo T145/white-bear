@@ -1,4 +1,4 @@
-name: Update Sources
+name: Organize lists
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - "data/v1/*.csv"
 
 jobs:
-  export_sources:
+  edit_lists:
     runs-on: ubuntu-latest
 
     container:
@@ -27,7 +27,7 @@ jobs:
           mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v1/blacklist.csv | sponge data/v1/blacklist.csv
         shell: bash
 
-      - name: Upload modified sources
+      - name: Upload modified lists
         if: success()
         uses: actions/upload-artifact@v3
         with:
