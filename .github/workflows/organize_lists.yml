@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "data/v1/*.csv"
+      - "data/v2/*.csv"
 
 jobs:
   edit_lists:
@@ -23,8 +23,7 @@ jobs:
 
       - name: Organize lists
         run: |
-          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v1/whitelist.csv | sponge data/v1/whitelist.csv
-          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v1/blacklist.csv | sponge data/v1/blacklist.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data,auth_name data/v2/dot.csv | sponge data/v2/dot.csv
         shell: bash
 
       - name: Upload modified lists
@@ -33,13 +32,13 @@ jobs:
         with:
           name: lists
           path: |
-            data/v1/*.csv
+            data/v2/*.csv
             exports/*
           retention-days: 1
 
   commit_changes:
     runs-on: ubuntu-latest
-    needs: export_sources
+    needs: edit_lists
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
