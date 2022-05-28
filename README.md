@@ -1,12 +1,12 @@
 <div align="center">
-  <img src=".github/images/logo.jpg"
+  <img src=".github/images/logo.png"
        width="600"
        alt="logo"
        longdesc="https://github.com/T145/white-bear/master/README.md" />
   <h3>🏊🏿‍♀️ Delve | 📸 Demystify | 🛑 Deny</h3>
   <hr>
   <p><a href="https://en.wikipedia.org/wiki/DNS_over_HTTPS">DoH</a>, <a href="https://en.wikipedia.org/wiki/DNS_over_TLS">DoT</a>, <a href="https://dnscrypt.info/">DNSCrypt</a>, &amp; <a href="https://adguard.com/en/blog/dns-over-quic.html">DoQ</a> provider whitelists and blacklists.</p>
-  <p>A spiritual successor to <a href="https://github.com/oneoffdallas/dohservers">dohservers</a> and <a href="https://github.com/Sekhan/TheGreatWall">TheGreatWall</a></p>
+  <p>A spiritual successor to <a href="https://github.com/oneoffdallas/dohservers">dohservers</a> and <a href="https://github.com/Sekhan/TheGreatWall">TheGreatWall</a>.</p>
   <hr>
   <img src="https://badges.pufler.dev/updated/T145/white-bear"1
        alt="last_updated"
@@ -44,6 +44,7 @@ It's recommended to use `data/v2/doh.csv` as a blacklist and all other lists as 
 - https://dnsprivacy.org/test_servers/#stubby-configuration
   - https://raw.githubusercontent.com/getdnsapi/stubby/develop/stubby.yml.example
 - https://github.com/curl/curl/wiki/DNS-over-HTTPS#publicly-available-servers
+- https://kb.adguard.com/en/general/dns-providers
 
 ### TODO
 
