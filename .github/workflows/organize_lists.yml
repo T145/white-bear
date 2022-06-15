@@ -24,6 +24,8 @@ jobs:
       - name: Organize lists
         run: |
           mlr --csv --quote-all sort -f provider,service_type,address_type,address_data,auth_name data/v2/dot.csv | sponge data/v2/dot.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data data/v2/doh.csv | sponge data/v2/doh.csv
+          mlr --csv --quote-all sort -f provider,service_type,address_type,address_data,auth_name data/v2/dnscrypt.csv | sponge data/v2/dnscrypt.csv
         shell: bash
 
       - name: Upload modified lists
