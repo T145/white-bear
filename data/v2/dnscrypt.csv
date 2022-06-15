@@ -48,7 +48,7 @@
 "FFMUC","DNSCRYPT","IPV4","5.1.66.255","8443","2.dnscrypt-cert.ffmuc.net"
 "FFMUC","DNSCRYPT","IPV6","2001:678:e68:f000::","8443","2.dnscrypt-cert.ffmuc.net"
 "ibksturm","DNSCRYPT","IPV4","83.77.85.7","8443","2.dnscrypt-cert.ibksturm"
-"ibksturm","DNSCRYPT","IPV6","2a02:1205:5055:de60:b26e:bfff:fe1d:e19b","8443","2.dnscrypt-cert.ibksturm
+"ibksturm","DNSCRYPT","IPV6","2a02:1205:5055:de60:b26e:bfff:fe1d:e19b","8443","2.dnscrypt-cert.ibksturm"
 "Seby1","DNSCRYPT","IPV4","45.76.113.31","","2.dnscrypt-cert.dns.seby.io"
 "Seby2","DNSCRYPT","IPV4","139.99.222.72","","2.dnscrypt-cert.dns.seby.io"
 "Arapurayil","DNSCRYPT","IPV4","3.7.156.128","","2.dnscrypt-cert.dns.arapurayil.com"
